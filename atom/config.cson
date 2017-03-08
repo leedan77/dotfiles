@@ -1,0 +1,32 @@
+"*":
+  "atom-material-ui":
+    colors: {}
+    fonts: {}
+    tabs: {}
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+  core:
+    disabledPackages: [
+      "vim-mode-plus"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "oceanic-next"
+    ]
+  editor:
+    fontFamily: "Operator Mono"
+    fontSize: 18
+  "exception-reporting":
+    userId: "c1fb1376-2980-2d9f-c8c5-b36f79fd26c6"
+  linter:
+    lintOnFly: false
+  "linter-eslint": {}
+  "prettier-atom":
+    singleQuote: true
+    trailingComma: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
