@@ -1,0 +1,73 @@
+# when 'default' mode is NOT active, any key-combination that
+# does not correspond to a valid bind will be suppressed.
+# this is enabled by default, and must be explicitly set to 'off'.
+khd void_unlisted_bind off
+
+# Enable kwm compatibility mode
+khd kwm on
+
+# set color of default mode
+khd mode default color 0x00000000
+khd mode resize color 0xFF458588
+
+# Activate resize mode
+alt - r                  :    khd -e "mode activate resize"
+
+# Back to default 0x35 = esc
+resize - 0x35            :    khd -e "mode activate default"
+resize + alt - r         :    khd -e "mode activate default"
+
+# Reload khd config
+cmd + alt - r            :    khd -e "reload"
+
+# Reload kwm
+cmd + alt + ctrl - r     :    kwmc config reload
+
+# Launch iTerm2
+cmd - return             :    open -na /Applications/iTerm2.app
+
+# Set Space Tiling Mode To BSP
+cmd + ctrl - a           :    kwmc space -t bsp
+
+# Set Space Tiling Mode To Monocle
+cmd + ctrl - s           :    kwmc space -t monocle
+
+# Set Space Tiling Mode To Floating
+cmd + ctrl - d           :    kwmc space -t float
+
+# Rotate Window-Tree By 90degrees (Clockwise)
+cmd + ctrl - r           :    kwmc tree rotate 90
+
+# Modify Container
+resize - h               :    kwmc window -c expand 0.05 west
+resize - j               :    kwmc window -c reduce 0.05 south
+resize - k               :    kwmc window -c expand 0.05 north
+resize - l               :    kwmc window -c expand 0.05 east
+
+resize + shift - h       :    kwmc window -c reduce 0.05 west
+resize + shift - j       :    kwmc window -c reduce 0.05 south
+resize + shift - k       :    kwmc window -c reduce 0.05 north
+resize + shift - l       :    kwmc window -c reduce 0.05 east
+
+# Set Temporary Window Container
+alt - m                  :    kwmc window -z fullscreen
+alt - w               :    kwmc window -t focused
+
+# Give Focus To Window
+alt - j            :    kwmc window -f west
+alt - 0x29         :    kwmc window -f east
+alt - k            :    kwmc window -f south
+alt - l            :    kwmc window -f north
+
+# Swap Focused Window
+ctrl + alt - h           :    kwmc window -s west
+ctrl + alt - j           :    kwmc window -s south
+ctrl + alt - k           :    kwmc window -s north
+ctrl + alt - l           :    kwmc window -s east
+ctrl + alt - m           :    kwmc window -s mark
+
+# Detach Focused Window And Reinsert In Direction
+alt + shift - l         :    kwmc window -m north
+alt + shift - 0x29      :    kwmc window -m east
+alt + shift - k         :    kwmc window -m south
+alt + shift - j         :    kwmc window -m west
