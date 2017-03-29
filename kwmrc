@@ -36,6 +36,9 @@ e.g: window-rules in a separate file called 'rules'
     include rules
 */
 
+# Float listing apps 
+kwmc rule owner="Steam" properties={float="true"}
+
 # Set default values for screen padding
 kwmc config padding 40 20 20 20
 

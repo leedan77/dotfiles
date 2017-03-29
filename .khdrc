@@ -60,10 +60,10 @@ alt - k            :    kwmc window -f south
 alt - l            :    kwmc window -f north
 
 # Swap Focused Window
-ctrl + alt - h           :    kwmc window -s west
-ctrl + alt - j           :    kwmc window -s south
-ctrl + alt - k           :    kwmc window -s north
-ctrl + alt - l           :    kwmc window -s east
+ctrl + alt - j           :    kwmc window -s west
+ctrl + alt - k           :    kwmc window -s south
+ctrl + alt - l           :    kwmc window -s north
+ctrl + alt - 0x29        :    kwmc window -s east
 ctrl + alt - m           :    kwmc window -s mark
 
 # Detach Focused Window And Reinsert In Direction
