@@ -1,0 +1,25 @@
+{
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true,
+        "suppressWelcomeNotice": true
+    },
+    "gitlens.keymap": "alternate",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Oceanic Next",
+    "materialTheme.fixIconsRunning": false,
+    "editor.fontSize": "20",
+    "editor.fontFamily": "OperatorMono-Book",
+    "workbench.colorCustomizations": {},
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.tabSize": 2,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all"
+}
