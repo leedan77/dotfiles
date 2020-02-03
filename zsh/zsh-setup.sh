@@ -21,7 +21,7 @@ echo ''
 # setup theme
 echo 'Creating custom theme'
 mkdir -p ~/.oh-my-zsh/custom/themes
-cp ~/.oh-my-zsh/themes/robbyrussell.zsh-theme ~/.oh-my-zsh/custom/themes/gordon.zsh-theme
+cp tx.zsh-theme ~/.oh-my-zsh/custom/themes/tx.zsh-theme
 ret_status='local ret_status="%(?:%{$bg[blue]%}:%{$bg[red]%}) %M %{$reset_color%}"'
 
 echo 'Done'
