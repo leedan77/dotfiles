@@ -8,5 +8,9 @@
 * install vscode setting (Recommend use sync setting by vscode now)
 
 ## TODO
-- [ ] zsh plugins
-- [ ] brew plugins
+- [x] zsh plugins
+- [x] brew plugins
+
+## symbolic link
+- ln -s  $(pwd)zsh/.zshrc ~/.zshrc
+- ln -s  $(pwd)vim/.vimrc ~/.vimrc
